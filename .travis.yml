@@ -10,7 +10,7 @@ script:
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
   - docker tag udagram-api-feed ncdanhvn/udagram-api-feed:v1
   - docker tag udagram-api-user ncdanhvn/udagram-api-user:v1
-  - docker tag udagram-frontend ncdanhvn/udagram-frontend:v1
+  - docker tag udagram-frontend ncdanhvn/udagram-frontend:v2
   - docker tag udagram-reverseproxy ncdanhvn/reverseproxy:v1
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push ncdanhvn/udagram-api-feed:v1
